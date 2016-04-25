@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Microsoft YaHei";
+}
+h1{
+  color: #0099FF;
+  font-family: "Microsoft YaHei";
+  font-size: 1.5em;
+}
+.container {
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.container:hover
+{
+  transform: skewX(40deg) rotate(360deg);
+}
+
+.container:hover 
+.shine{
+  transform: skewX(40deg) translateX(700px);
+}
+
+
+.hello {
+  width: 300px;
+  height: 150px;
+  background: #0099FF;
+  color: white;
+  font-size: 2em;
+  transition: background .9s ease-in-out; 
+  border-radius: 15px;
+  border:transparent;
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  height: 150px;
+  width: 50px;
+  background:rgba(255, 260, 255, 0.4);
+  transition: all .2s ease-in;
+  transform: skewX(40deg) skewY(60deg);
+}
